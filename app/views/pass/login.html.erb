@@ -1,0 +1,22 @@
+
+<h2> Login if you are registerd </h2>
+ Or  <%= link_to('Sign-up now!', {:controller => 'users', :action => 'new'}) %> 
+<hr> 
+<div class="login">
+  <%= form_tag(:action => 'attempt_login') do %>
+  
+      <%= label_tag(:username) %> &nbsp
+      <%= text_field_tag(:user_name) %> <br>
+    
+    
+      <%= label_tag(:password) %> &nbsp
+      <%= password_field_tag(:password_digest) %> <br>
+    
+    
+    
+     <%= submit_tag("Log In") %>
+    
+  
+  <% end %>
+</div>
+
